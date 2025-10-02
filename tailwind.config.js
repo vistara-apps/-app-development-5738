@@ -6,18 +6,45 @@ export default {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        'inter': ['Inter', 'sans-serif'],
-      },
       colors: {
-        'warm-brown': '#8B4513',
-        'cream': '#F5F5DC',
-        'peach': '#FFCBA4',
-        'rose': '#FFB6C1',
+        bg: 'hsl(340, 15%, 4%)',
+        text: 'hsl(340, 10%, 98%)',
+        accent: 'hsl(24, 95%, 53%)',
+        border: 'hsl(340, 10%, 18%)',
+        primary: 'hsl(340, 82%, 52%)',
+        success: 'hsl(142, 71%, 45%)',
+        surface: 'hsl(340, 10%, 10%)',
+        warning: 'hsl(38, 92%, 50%)',
+        'text-muted': 'hsl(340, 5%, 65%)',
+        'primary-hover': 'hsl(340, 82%, 42%)',
+        'surface-hover': 'hsl(340, 10%, 14%)',
       },
-      backgroundImage: {
-        'warm-gradient': 'linear-gradient(135deg, #8B4513 0%, #CD853F 25%, #F4A460 50%, #DEB887 75%, #F5DEB3 100%)',
-        'hero-gradient': 'linear-gradient(135deg, rgba(139, 69, 19, 0.8) 0%, rgba(205, 133, 63, 0.7) 50%, rgba(222, 184, 135, 0.6) 100%)',
+      borderRadius: {
+        'lg': '20px',
+        'md': '12px',
+        'sm': '6px',
+      },
+      boxShadow: {
+        'card': '0 8px 32px hsla(340, 82%, 10%, 0.24)',
+        'glow': '0 0 40px hsla(340, 82%, 52%, 0.3)',
+        'card-hover': '0 12px 48px hsla(340, 82%, 10%, 0.32)',
+      },
+      spacing: {
+        'xs': '4px',
+        'sm': '8px',
+        'md': '16px',
+        'lg': '24px',
+        'xl': '40px',
+      },
+      animation: {
+        'pulse-glow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'float': 'float 6s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' },
+        }
       }
     },
   },
