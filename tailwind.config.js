@@ -36,6 +36,9 @@ export default {
         'lg': '24px',
         'xl': '40px',
       },
+      transitionDuration: {
+        '250': '250ms',
+      },
       animation: {
         'pulse-glow': 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
         'float': 'float 6s ease-in-out infinite',
